@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import 'signup.dart';
+import 'package:offline_datebase/splashscreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: signup(),
+    home: splashpage(),
     debugShowCheckedModeBanner: false,
   ));
 }
