@@ -52,6 +52,19 @@ class MyDataBase {
     List<Map> Lpdview = await db1.rawQuery(pdview);
     return Lpdview;
   }
+
+  Future<void> deletedata(Database db1, int did) async {
+String delete = "DELETE  FROM Pdata WHERE ID='${did}'";
+  int DateDelete = await db1.rawDelete(delete);
+
+
+  }
+
+  Future<void> updatedata(Database? db1, String name, String number, pda, ) async {
+    String updatedata = "UPDATE Pdata SET NAME='$name',CONTACTNUBER = '$number' WHERE ID='$pda'";
+    await db1!.rawUpdate(updatedata);
+
+  }
 }
 
 
