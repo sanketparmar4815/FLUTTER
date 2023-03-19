@@ -39,7 +39,6 @@ class _splashpageState extends State<splashpage> {
   }
 
   void foraddpersonaldata() {
-    // int       id = splashpage.prefe!.getInt("getlid")??999;
 
     MyDataBase().ForGetDataBase().then((value) {
       setState(() {
